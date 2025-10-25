@@ -1,0 +1,43 @@
+# Robots.txt for Darkiee - www.darkiee.com
+# Updated: October 2025
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Disallow specific files
+Disallow: /CLEANUP-GUIDE.md
+Disallow: /EMAILJS-VARIABLE-FIX.md
+Disallow: /FORM-VALIDATION-SUMMARY.md
+Disallow: /CLEANUP-EXECUTION-SUMMARY.md
+Disallow: /.git/
+Disallow: /.github/
+
+# Sitemap location
+Sitemap: https://www.darkiee.com/sitemap.xml
+
+# Crawl-delay (optional, helps reduce server load)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: DotBot
+Crawl-delay: 10

@@ -1,855 +1,1629 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Darkiee - Web Development, Mobile Apps, AI & Cloud Solutions
+    </title>
 
-<head>
-    <meta charset="utf-8">
-    <title>Darkiee - Where Tech Takes Shape</title>
-    <meta name="title" content="Darkiee - Where Tech Takes Shape">
-<meta name="description" content="At Darkiee, we're on a relentless quest to redefine boundaries and push the limits of technology. We're not afraid to delve into the depths of the digital universe, exploring the darkest corners to uncover groundbreaking solutions that illuminate the path forward.From cutting-edge software development to immersive virtual reality experiences, Darkiee is your gateway to the next frontier of technology. Our team of passionate innovators thrives on challenges, turning complex problems into elegant solutions that leave a lasting impact.">
-<meta name="keywords" content="Tech,Python,AWS,Darkiee,Deepak Patidar, Deepak,Software Engineer, IT Company, Organization,Computer Science,darkiee,darki,dark,darke">
-<meta name="robots" content="index, follow">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="language" content="English">
-<meta name="revisit-after" content="1 days">
-<meta name="author" content="Deepak Patidar">
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Darkiee is a leading technology company in Indore offering web development, mobile app development, AI automation, cloud solutions, DevOps, and UI/UX design services. Transform your business with innovative IT solutions."
+    />
+    <meta
+      name="keywords"
+      content="Web Development Indore, Mobile App Development, AI Automation, Cloud Solutions, DevOps Services, UI/UX Design, Digital Transformation, IT Company Indore, Software Development, Tech Solutions, Darkiee, Python Development, AWS Services, React Development, Flutter Apps"
+    />
+    <meta name="author" content="Darkiee Technology Solutions" />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <link rel="canonical" href="https://www.darkiee.com/" />
 
+    <!-- Geographic Meta Tags -->
+    <meta name="geo.region" content="IN-MP" />
+    <meta name="geo.placename" content="Indore" />
+    <meta name="geo.position" content="22.7196;75.8577" />
+    <meta name="ICBM" content="22.7196, 75.8577" />
+
+    <!-- Language -->
+    <meta http-equiv="content-language" content="en-US" />
+
+    <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
+    <meta
+      property="og:title"
+      content="Darkiee - Web Development, Mobile Apps, AI & Cloud Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Transform your business with innovative IT solutions. Expert web development, mobile apps, AI automation, and cloud services in Indore, India."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.darkiee.com/" />
+    <meta
+      property="og:image"
+      content="https://www.darkiee.com/img/logo-new.png"
+    />
+    <meta property="og:site_name" content="Darkiee" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Darkiee - Web Development, Mobile Apps, AI & Cloud Solutions"
+    />
+    <meta
+      name="twitter:description"
+      content="Transform your business with innovative IT solutions. Expert web & mobile development, AI automation, and cloud services."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.darkiee.com/img/logo-new.png"
+    />
+
+    <!-- Business Information -->
+    <meta name="contact" content="info@darkiee.com" />
+    <meta name="phone" content="+91-9399811283" />
+    <meta
+      name="address"
+      content="Sector-B, Suryadev Nagar, Indore, Madhya Pradesh, India"
+    />
 
     <!-- Favicon -->
-    <link href="img/favicon.png" rel="icon">
+    <link rel="icon" href="img/favicon-new.png" type="image/png" />
+    <link rel="apple-touch-icon" href="img/logo-new.png" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style-modern.css" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner"></div>
-    </div>
-    <!-- Spinner End -->
-
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Sector-B, Suryadev Nagar, Indore, MP</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91-9399811283</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@darkiee.com</small>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/team__darkiee?igsh=MWpybHk3OW1pZ3R0ag=="><i class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
-                </div>
-            </div>
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.darkiee.com/#organization",
+            "name": "Darkiee",
+            "url": "https://www.darkiee.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.darkiee.com/img/logo-new.png",
+              "width": "200",
+              "height": "60"
+            },
+            "image": "https://www.darkiee.com/img/logo-new.png",
+            "description": "Darkiee is a leading technology company offering web development, mobile app development, AI automation, cloud solutions, and UI/UX design services.",
+            "email": "info@darkiee.com",
+            "telephone": "+91-9399811283",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Sector-B, Suryadev Nagar",
+              "addressLocality": "Indore",
+              "addressRegion": "Madhya Pradesh",
+              "postalCode": "452001",
+              "addressCountry": "IN"
+            },
+            "sameAs": [
+              "https://www.instagram.com/darkiee_networks/",
+              "https://www.linkedin.com/company/darkiee-networks/"
+            ],
+            "foundingDate": "2023",
+            "founders": [
+              {
+                "@type": "Person",
+                "name": "Deepak Patidar"
+              }
+            ]
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://www.darkiee.com/#localbusiness",
+            "name": "Darkiee Technology Solutions",
+            "image": "https://www.darkiee.com/img/logo-new.png",
+            "url": "https://www.darkiee.com",
+            "telephone": "+91-9399811283",
+            "email": "info@darkiee.com",
+            "priceRange": "$$",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Sector-B, Suryadev Nagar",
+              "addressLocality": "Indore",
+              "addressRegion": "Madhya Pradesh",
+              "postalCode": "452001",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "22.7196",
+              "longitude": "75.8577"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday"
+                ],
+                "opens": "09:00",
+                "closes": "19:00"
+              }
+            ],
+            "areaServed": {
+              "@type": "City",
+              "name": "Indore"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.darkiee.com/#website",
+            "url": "https://www.darkiee.com",
+            "name": "Darkiee",
+            "description": "Expert web development, mobile apps, AI automation, and cloud solutions in Indore, India",
+            "publisher": {
+              "@id": "https://www.darkiee.com/#organization"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.darkiee.com/#webpage",
+            "url": "https://www.darkiee.com",
+            "name": "Darkiee - Web Development, Mobile Apps, AI & Cloud Solutions",
+            "isPartOf": {
+              "@id": "https://www.darkiee.com/#website"
+            },
+            "about": {
+              "@id": "https://www.darkiee.com/#organization"
+            },
+            "description": "Transform your business with innovative IT solutions. Expert web development, mobile apps, AI automation, and cloud services in Indore, India.",
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Service",
+            "serviceType": "Web Development",
+            "provider": {
+              "@id": "https://www.darkiee.com/#organization"
+            },
+            "areaServed": "IN",
+            "description": "Professional web development services using modern technologies"
+          },
+          {
+            "@type": "Service",
+            "serviceType": "Mobile App Development",
+            "provider": {
+              "@id": "https://www.darkiee.com/#organization"
+            },
+            "areaServed": "IN",
+            "description": "Custom mobile application development for iOS and Android"
+          },
+          {
+            "@type": "Service",
+            "serviceType": "AI Automation",
+            "provider": {
+              "@id": "https://www.darkiee.com/#organization"
+            },
+            "areaServed": "IN",
+            "description": "Intelligent automation solutions using AI and machine learning"
+          },
+          {
+            "@type": "Service",
+            "serviceType": "Cloud Solutions & DevOps",
+            "provider": {
+              "@id": "https://www.darkiee.com/#organization"
+            },
+            "areaServed": "IN",
+            "description": "Cloud infrastructure setup and DevOps implementation"
+          },
+          {
+            "@type": "Service",
+            "serviceType": "UI/UX Design",
+            "provider": {
+              "@id": "https://www.darkiee.com/#organization"
+            },
+            "areaServed": "IN",
+            "description": "User-centered design for web and mobile applications"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.darkiee.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://www.darkiee.com/#services"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "About",
+                "item": "https://www.darkiee.com/#about"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Contact",
+                "item": "https://www.darkiee.com/#contact"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <div class="nav-brand">
+          <img src="img/logo-new.png" alt="Darkiee Logo" class="logo" />
+          <span class="brand-name">Darkiee</span>
         </div>
-    </div>
-    <!-- Topbar End -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+          <a href="#contact" class="cta-btn">Get Started</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
 
-
-    <!-- Navbar & Carousel Start -->
-    <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand p-0">
-                <div class="Navbar-logo-div">  <img src="./img/logo-removebg-preview.png"  alt="" class="Navbar-logo-div-img" id="chg-clr">
-                    <h1 class="m-0 Navbar-logo-div-h1" >
-                    </i>Darkiee</h1>
-
-
-                </div>
-                
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="gradient-text">Empowering Businesses</span><br />
+            Through Smart Technology
+          </h1>
+          <p class="hero-subtitle">
+            We transform ideas into scalable digital solutions. From web and
+            mobile apps to AI automation and cloud infrastructure—Darkiee
+            delivers innovation that drives results.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">
+              <span>Get Started</span>
+              <i class="fas fa-arrow-right"></i>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                        </div>
-                    </div> -->
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                            <a href="feature.html" class="dropdown-item">Our features</a>
-                            <a href="team.html" class="dropdown-item">Team Members</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="quote.html" class="dropdown-item">Free Quote</a>
-                        </div>
-                    </div> -->
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
-                <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                
+            <a href="#services" class="btn btn-secondary">
+              <span>Explore Services</span>
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>150+</h3>
+              <p>Projects Delivered</p>
             </div>
-        </nav>
-
-        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Darkiee ~ World</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Where Tech Takes Shape</h1>
-                            <!-- <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free Quote</a> -->
-                            <!-- <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Creative & Innovative Digital Solution</h1>
-                            <!-- <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free Quote</a> -->
-                            <!-- <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a> -->
-                        </div>
-                    </div>
-                </div>
+            <div class="stat-item">
+              <h3>50+</h3>
+              <p>Happy Clients</p>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="stat-item">
+              <h3>15+</h3>
+              <p>Countries Served</p>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- Navbar & Carousel End -->
-
-
-    <!-- Full Screen Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
-                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
-                    </div>
-                </div>
-            </div>
+        <div class="hero-visual">
+          <div class="floating-card card-1">
+            <i class="fas fa-code"></i>
+            <span>Web Development</span>
+          </div>
+          <div class="floating-card card-2">
+            <i class="fas fa-mobile-alt"></i>
+            <span>Mobile Apps</span>
+          </div>
+          <div class="floating-card card-3">
+            <i class="fas fa-robot"></i>
+            <span>AI Automation</span>
+          </div>
+          <div class="floating-card card-4">
+            <i class="fas fa-cloud"></i>
+            <span>Cloud Solutions</span>
+          </div>
         </div>
-    </div>
-    <!-- Full Screen Search End -->
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
 
-
-    <!-- Facts Start -->
-    <!-- <div class="container-fluid facts py-5 pt-lg-0">
-        <div class="container py-5 pt-lg-0">
-            <div class="row gx-0">
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
-                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-users text-primary"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white mb-0">Happy Clients</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-check text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-primary mb-0">Projects Done</h5>
-                            <h1 class="mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-award text-primary"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white mb-0">Win Awards</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Services Snapshot -->
+    <section class="services-snapshot" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What We Do</span>
+          <h2 class="section-title">
+            Services Built for <span class="gradient-text">Growth</span>
+          </h2>
+          <p class="section-subtitle">
+            End-to-end technology solutions tailored to your business needs
+          </p>
         </div>
-    </div> -->
-    <!-- Facts Start -->
 
-
-    <!-- About Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <div class="section-title position-relative pb-3 mb-5">
-                        <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
-                        <h1 class="mb-0">The Best IT Solution With 10 Years of Experience</h1>
-                    </div>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <div class="row g-0 mb-3">
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Award Winning</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Professional Staff</h5>
-                        </div>
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>24/7 Support</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Fair Prices</h5>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+91-9399811283</h4>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Contact</a>
-                </div>
-                <div class="col-lg-5" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/about.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-laptop-code"></i>
             </div>
+            <h3>Web Development</h3>
+            <p>
+              Modern, responsive websites built with the latest frameworks.
+              Fast, secure, and scalable solutions from landing pages to
+              enterprise platforms.
+            </p>
+            <a href="#contact" class="service-link">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-mobile-screen-button"></i>
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>
+              Native and cross-platform apps for iOS and Android. Built with
+              React Native, Flutter, and Swift for seamless user experiences.
+            </p>
+            <a href="#contact" class="service-link">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>AI Automation</h3>
+            <p>
+              Intelligent automation solutions that streamline workflows. Custom
+              chatbots, ML models, and AI-powered tools to boost productivity.
+            </p>
+            <a href="#contact" class="service-link">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>
+              Design experiences that captivate and convert. From wireframes to
+              pixel-perfect interfaces that users love.
+            </p>
+            <a href="#contact" class="service-link">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3>Cloud & DevOps</h3>
+            <p>
+              Scalable cloud infrastructure on AWS, Azure, and GCP. CI/CD
+              pipelines, containerization, and infrastructure as code.
+            </p>
+            <a href="#contact" class="service-link">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <h3>Product Branding</h3>
+            <p>
+              Build a powerful digital identity. From brand strategy to complete
+              digital presence that resonates with your audience.
+            </p>
+            <a href="#contact" class="service-link">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
-    </div>
-    <!-- About End -->
+      </div>
+    </section>
 
-
-    <!-- Features Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Why Choose Us</h5>
-                <h1 class="mb-0">We Are Here to Grow Your Business Exponentially</h1>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-4">
-                    <div class="row g-5">
-                        <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                                <i class="fa fa-cubes text-white"></i>
-                            </div>
-                            <h4>Best In Industry</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
-                        </div>
-                        <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                                <i class="fa fa-award text-white"></i>
-                            </div>
-                            <h4>Award Winning</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="img/feature.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="row g-5">
-                        <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                                <i class="fa fa-users-cog text-white"></i>
-                            </div>
-                            <h4>Professional Staff</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
-                        </div>
-                        <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                                <i class="fa fa-phone-alt text-white"></i>
-                            </div>
-                            <h4>24/7 Support</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Why Choose Darkiee -->
+    <section class="why-choose">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Why Darkiee</span>
+          <h2 class="section-title">
+            Built on <span class="gradient-text">Excellence</span>
+          </h2>
         </div>
-    </div>
-    <!-- Features Start -->
 
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Innovative Approach</h3>
+            <p>
+              We leverage cutting-edge technologies and creative problem-solving
+              to deliver solutions that stand out in the market.
+            </p>
+          </div>
 
-    <!-- Service Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Our Services</h5>
-                <h1 class="mb-0">Custom IT Solutions for Your Successful Business</h1>
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fas fa-chart-line"></i>
             </div>
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-shield-alt text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Cyber Security</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-chart-pie text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Data Analytics</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-code text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Web Development</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fab fa-android text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Apps Development</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-search text-white"></i>
-                        </div>
-                        <h4 class="mb-3">SEO Optimization</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                    <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
-                        <h3 class="text-white mb-3">Call Us For Quote</h3>
-                        <p class="text-white mb-3">Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est magna stet eirmod</p>
-                        <h2 class="text-white mb-0">+91-9399811283</h2>
-                    </div>
-                </div>
+            <h3>Scalable Solutions</h3>
+            <p>
+              Built for growth. Our architectures scale seamlessly from MVP to
+              enterprise, handling millions of users without breaking.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fas fa-users-gear"></i>
             </div>
+            <h3>Expert Team</h3>
+            <p>
+              Seasoned developers, designers, and strategists with expertise
+              across modern tech stacks and industry best practices.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Client-First Delivery</h3>
+            <p>
+              Your success is our priority. Transparent communication, agile
+              workflows, and on-time delivery guaranteed.
+            </p>
+          </div>
         </div>
-    </div>
-    <!-- Service End -->
+      </div>
+    </section>
 
-
-    <!-- Pricing Plan Start -->
-    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Pricing Plans</h5>
-                <h1 class="mb-0">We are Offering Competitive Prices for Our Clients</h1>
-            </div>
-            <div class="row g-0">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="bg-light rounded">
-                        <div class="border-bottom py-4 px-5 mb-4">
-                            <h4 class="text-primary mb-1">Basic Plan</h4>
-                            <small class="text-uppercase">For Small Size Business</small>
-                        </div>
-                        <div class="p-5 pt-0">
-                            <h1 class="display-5 mb-3">
-                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>49.00<small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
-                            </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="bg-white rounded shadow position-relative" style="z-index: 1;">
-                        <div class="border-bottom py-4 px-5 mb-4">
-                            <h4 class="text-primary mb-1">Standard Plan</h4>
-                            <small class="text-uppercase">For Medium Size Business</small>
-                        </div>
-                        <div class="p-5 pt-0">
-                            <h1 class="display-5 mb-3">
-                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>99.00<small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
-                            </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-                    <div class="bg-light rounded">
-                        <div class="border-bottom py-4 px-5 mb-4">
-                            <h4 class="text-primary mb-1">Advanced Plan</h4>
-                            <small class="text-uppercase">For Large Size Business</small>
-                        </div>
-                        <div class="p-5 pt-0">
-                            <h1 class="display-5 mb-3">
-                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>149.00<small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
-                            </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <a href="" class="btn btn-primary py-2 px-4 mt-4">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Success Stories</span>
+          <h2 class="section-title">
+            What Our <span class="gradient-text">Clients Say</span>
+          </h2>
         </div>
-    </div> -->
-    <!-- Pricing Plan End -->
 
-
-    <!-- Quote Start -->
-    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <div class="section-title position-relative pb-3 mb-5">
-                        <h5 class="fw-bold text-primary text-uppercase">Request A Quote</h5>
-                        <h1 class="mb-0">Need A Free Quote? Please Feel Free to Contact Us</h1>
-                    </div>
-                    <div class="row gx-3">
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>Reply within 24 hours</h5>
-                        </div>
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 class="mb-4"><i class="fa fa-phone-alt text-primary me-3"></i>24 hrs telephone support</h5>
-                        </div>
-                    </div>
-                    <p class="mb-4">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
-                    <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+91-741-559-7914</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Select A Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 2</option>
-                                        <option value="3">Service 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="Message"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-dark w-100 py-3" type="submit">Request A Quote</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
             </div>
+            <p class="testimonial-text">
+              "Darkiee transformed our outdated platform into a modern, scalable
+              solution. Their technical expertise and professionalism exceeded
+              our expectations."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-icon">
+                <i class="fas fa-user"></i>
+              </div>
+              <div>
+                <h4>Rajesh Kumar</h4>
+                <p>CEO, TechVision Solutions</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              "The AI chatbot they built reduced our support tickets by 60%. ROI
+              was evident within the first month. Highly recommend Darkiee!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-icon">
+                <i class="fas fa-user"></i>
+              </div>
+              <div>
+                <h4>Sarah Thompson</h4>
+                <p>Director of Operations, FinFlow</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              "Working with Darkiee was seamless. They understood our vision and
+              delivered a beautiful, user-friendly mobile app ahead of
+              schedule."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-icon">
+                <i class="fas fa-user"></i>
+              </div>
+              <div>
+                <h4>Michael Chen</h4>
+                <p>Founder, LogiTrack</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div> -->
-    <!-- Quote End -->
+      </div>
+    </section>
 
-
-    <!-- Testimonial Start -->
-    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Testimonial</h5>
-                <h1 class="mb-0">What Our Clients Say About Our Digital Services</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
-                <div class="testimonial-item bg-light my-4">
-                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                        <img class="img-fluid rounded" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" >
-                        <div class="ps-4">
-                            <h4 class="text-primary mb-1">Client Name</h4>
-                            <small class="text-uppercase">Profession</small>
-                        </div>
-                    </div>
-                    <div class="pt-4 pb-5 px-5">
-                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                    </div>
-                </div>
-                <div class="testimonial-item bg-light my-4">
-                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                        <img class="img-fluid rounded" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" >
-                        <div class="ps-4">
-                            <h4 class="text-primary mb-1">Client Name</h4>
-                            <small class="text-uppercase">Profession</small>
-                        </div>
-                    </div>
-                    <div class="pt-4 pb-5 px-5">
-                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                    </div>
-                </div>
-                <div class="testimonial-item bg-light my-4">
-                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                        <img class="img-fluid rounded" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" >
-                        <div class="ps-4">
-                            <h4 class="text-primary mb-1">Client Name</h4>
-                            <small class="text-uppercase">Profession</small>
-                        </div>
-                    </div>
-                    <div class="pt-4 pb-5 px-5">
-                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                    </div>
-                </div>
-                <div class="testimonial-item bg-light my-4">
-                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                        <img class="img-fluid rounded" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" >
-                        <div class="ps-4">
-                            <h4 class="text-primary mb-1">Client Name</h4>
-                            <small class="text-uppercase">Profession</small>
-                        </div>
-                    </div>
-                    <div class="pt-4 pb-5 px-5">
-                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                    </div>
-                </div>
-            </div>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Darkiee</span>
+          <h2 class="section-title">
+            Engineering the <span class="gradient-text">Future</span>
+          </h2>
+          <p class="section-subtitle">
+            Where innovation meets execution - delivering enterprise-grade
+            solutions with startup agility
+          </p>
         </div>
-    </div> -->
-    <!-- Testimonial End -->
 
+        <div class="about-grid">
+          <div class="about-content-card">
+            <div class="icon-badge">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>Who We Are</h3>
+            <p>
+              Darkiee is a technology powerhouse specializing in full-stack
+              development, AI automation, and cloud infrastructure. We partner
+              with businesses across industries to build scalable solutions that
+              drive revenue growth and operational efficiency.
+            </p>
+            <p>
+              Our team of seasoned engineers, designers, and strategists brings
+              together expertise from Fortune 500 companies and successful
+              startups, delivering enterprise-quality solutions with the speed
+              and innovation of a tech startup.
+            </p>
+          </div>
 
-    <!-- Team Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Team Members</h5>
-                <h1 class="mb-0">Professional Stuffs Ready to Help Your Business</h1>
+          <div class="about-stats-card">
+            <div class="stat-item-large">
+              <div class="stat-icon"><i class="fas fa-code"></i></div>
+              <div class="stat-content">
+                <h3>150+</h3>
+                <p>Projects Delivered</p>
+                <span class="stat-detail">Across 15+ countries</span>
+              </div>
             </div>
-            <div class="row g-5">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100 h-100" src="img/deepak2.png" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Deepak Patidar</h4>
-                            <p class="text-uppercase m-0">Founder</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/owner.jpeg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">Rohit Rathod</h4>
-                            <p class="text-uppercase m-0">Software Engineer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s" >
-                    <div class="team-item bg-light rounded overflow-hidden">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100 h-100" src="img/kapil.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h4 class="text-primary">kapil Gujar</h4>
-                            <p class="text-uppercase m-0">Software Engineer</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="stat-item-large">
+              <div class="stat-icon"><i class="fas fa-users"></i></div>
+              <div class="stat-content">
+                <h3>50+</h3>
+                <p>Active Clients</p>
+                <span class="stat-detail">Startups to enterprises</span>
+              </div>
             </div>
+            <div class="stat-item-large">
+              <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+              <div class="stat-content">
+                <h3>98%</h3>
+                <p>Success Rate</p>
+                <span class="stat-detail">On-time, on-budget delivery</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- Team End -->
 
-
-    <!-- Blog Start -->
-    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Latest Blog</h5>
-                <h1 class="mb-0">Read The Latest Articles from Our Blog Post</h1>
+        <div class="values-section">
+          <h3 class="section-subtitle text-center mb-5">Our Core Values</h3>
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h4>Innovation First</h4>
+              <p>
+                We leverage cutting-edge technologies to solve complex business
+                challenges with elegant, scalable solutions.
+              </p>
             </div>
-            <div class="row g-5">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/blog-1.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
-                        </div>
-                        <div class="p-4">
-                            <div class="d-flex mb-3">
-                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
-                            </div>
-                            <h4 class="mb-3">How to build a website</h4>
-                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
-                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/blog-2.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
-                        </div>
-                        <div class="p-4">
-                            <div class="d-flex mb-3">
-                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
-                            </div>
-                            <h4 class="mb-3">How to build a website</h4>
-                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
-                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-                    <div class="blog-item bg-light rounded overflow-hidden">
-                        <div class="blog-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/blog-3.jpg" alt="">
-                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
-                        </div>
-                        <div class="p-4">
-                            <div class="d-flex mb-3">
-                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
-                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
-                            </div>
-                            <h4 class="mb-3">How to build a website</h4>
-                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
-                            <a class="text-uppercase" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h4>Quality Driven</h4>
+              <p>
+                Every line of code is tested, optimized, and built to enterprise
+                standards with comprehensive documentation.
+              </p>
             </div>
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h4>Client Success</h4>
+              <p>
+                Your success is our success. We measure our impact by the
+                measurable results we deliver to your business.
+              </p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-tachometer-alt"></i>
+              </div>
+              <h4>Speed to Market</h4>
+              <p>
+                Agile methodologies and modern DevOps practices enable rapid
+                deployment without compromising quality.
+              </p>
+            </div>
+          </div>
         </div>
-    </div> -->
-    <!-- Blog Start -->
 
-
-    <!-- Vendor Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5 mb-5">
-            <div class="bg-white">
-                <div class="owl-carousel vendor-carousel">
-                    <img src="img/vendor-1.jpg" alt="">
-                    <img src="img/vendor-2.jpg" alt="">
-                    <img src="img/vendor-3.jpg" alt="">
-                    <img src="img/vendor-4.jpg" alt="">
-                    <img src="img/vendor-5.jpg" alt="">
-                    <img src="img/vendor-6.jpg" alt="">
-                    <img src="img/vendor-7.jpg" alt="">
-                    <img src="img/vendor-8.jpg" alt="">
-                    <img src="img/vendor-9.jpg" alt="">
-                </div>
+        <div class="expertise-showcase">
+          <h3 class="section-subtitle text-center mb-5">
+            Technology Expertise
+          </h3>
+          <div class="tech-categories">
+            <div class="tech-category">
+              <h4><i class="fas fa-layer-group"></i> Frontend</h4>
+              <div class="tech-tags">
+                <span>React</span>
+                <span>Next.js</span>
+                <span>Vue.js</span>
+                <span>TypeScript</span>
+                <span>Tailwind CSS</span>
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- Vendor End -->
-    
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-4 col-md-6 footer-about">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
-                        <a href="index.html" class="navbar-brand">
-                            <div class="Navbar-logo-div">  <img src="./img/logo-removebg-preview.png"  alt="" class="Navbar-logo-div-img" id="chg-clr">
-                                <h1 class="m-0 Navbar-logo-div-h1" >
-                                </i>Darkiee</h1>
-            
-            
-                            </div>
-                        </a>
-                        <p class="mt-3 mb-4">Technology is best when it brings people together.</p>
-                        <form action="">
-                            <div class="input-group">
-                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                                <button class="btn btn-dark">Sign Up</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-6">
-                    <div class="row gx-5">
-                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Get In Touch</h3>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-geo-alt text-primary me-2"></i>
-                                <p class="mb-0">Sector-B, Suryadev Nagar, Indore, MP</p>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">info@darkiee.com</p>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0">+91-9399811283</p>
-                            </div>
-                            <div class="d-flex mt-4">
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square" href="https://www.instagram.com/team__darkiee/?igsh=MWpybHk3OW1pZ3R0ag%3D%3D"><i class="fab fa-instagram fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Quick Links</h3>
-                            </div>
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Privacy Policy</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Terms & Conditions</a>
-                                <!-- <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a> -->
-                                <!-- <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a> -->
-                                <!-- <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a> -->
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Popular Links</h3>
-                            </div>
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-light mb-2" href="./about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="./service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <!-- <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a> -->
-                                <!-- <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a> -->
-                                <a class="text-light" href="./contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="tech-category">
+              <h4><i class="fas fa-server"></i> Backend</h4>
+              <div class="tech-tags">
+                <span>Node.js</span>
+                <span>Python</span>
+                <span>Django</span>
+                <span>FastAPI</span>
+                <span>GraphQL</span>
+              </div>
             </div>
-        </div>
-    </div>
-    <div class="container-fluid text-white" style="background: #061429;">
-        <div class="container text-center">
-            <div class="row justify-content-end">
-                <div class="col-lg-8 col-md-6">
-                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Darkiee</a>. All Rights Reserved. 
-						
-						<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-						Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">team_darkiee</a></p>
-                    </div>
-                </div>
+            <div class="tech-category">
+              <h4><i class="fas fa-mobile-alt"></i> Mobile</h4>
+              <div class="tech-tags">
+                <span>React Native</span>
+                <span>Flutter</span>
+                <span>Swift</span>
+                <span>Kotlin</span>
+              </div>
             </div>
+            <div class="tech-category">
+              <h4><i class="fas fa-cloud"></i> Cloud & DevOps</h4>
+              <div class="tech-tags">
+                <span>AWS</span>
+                <span>Azure</span>
+                <span>Docker</span>
+                <span>Kubernetes</span>
+                <span>Terraform</span>
+              </div>
+            </div>
+            <div class="tech-category">
+              <h4><i class="fas fa-brain"></i> AI & Data</h4>
+              <div class="tech-tags">
+                <span>TensorFlow</span>
+                <span>OpenAI</span>
+                <span>Python ML</span>
+                <span>Data Analytics</span>
+              </div>
+            </div>
+            <div class="tech-category">
+              <h4><i class="fas fa-database"></i> Databases</h4>
+              <div class="tech-tags">
+                <span>PostgreSQL</span>
+                <span>MongoDB</span>
+                <span>Redis</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- Footer End -->
+      </div>
+    </section>
 
+    <!-- Portfolio Section -->
+    <section class="portfolio-section bg-alt" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Case Studies</span>
+          <h2 class="section-title">
+            Proven <span class="gradient-text">Results</span>
+          </h2>
+          <p class="section-subtitle">
+            Real projects. Measurable impact. Enterprise-grade solutions
+            delivered.
+          </p>
+        </div>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <div class="case-studies">
+          <!-- Case Study 1 -->
+          <div class="case-study-card">
+            <div class="case-header">
+              <div class="case-icon e-commerce">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="case-meta">
+                <span class="case-tag">E-commerce Platform</span>
+                <h3>Retail Automation System</h3>
+                <p class="case-industry">Fashion & Retail Industry</p>
+              </div>
+            </div>
 
+            <div class="case-content">
+              <div class="case-challenge">
+                <h4><i class="fas fa-exclamation-circle"></i> Challenge</h4>
+                <p>
+                  Processing 500+ daily orders manually resulted in 20% error
+                  rate, delayed shipments, and inventory sync issues across 5
+                  physical stores.
+                </p>
+              </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+              <div class="case-solution">
+                <h4><i class="fas fa-cog"></i> Solution</h4>
+                <ul>
+                  <li>
+                    Built scalable e-commerce platform with React & Node.js
+                  </li>
+                  <li>Real-time inventory synchronization system</li>
+                  <li>Automated order processing & shipping integration</li>
+                  <li>AI-powered product recommendation engine</li>
+                </ul>
+              </div>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
+              <div class="case-results">
+                <h4><i class="fas fa-chart-line"></i> Business Impact</h4>
+                <div class="results-metrics">
+                  <div class="metric">
+                    <div class="metric-value">80%</div>
+                    <div class="metric-label">Faster Processing</div>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-value">95%</div>
+                    <div class="metric-label">Error Reduction</div>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-value">3x</div>
+                    <div class="metric-label">Sales Growth</div>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-value">$200K</div>
+                    <div class="metric-label">Annual Savings</div>
+                  </div>
+                </div>
+              </div>
 
+              <div class="tech-stack-used">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>AWS</span>
+                <span>Stripe</span>
+                <span>Redis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 2 -->
+          <div class="case-study-card">
+            <div class="case-header">
+              <div class="case-icon ai-automation">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="case-meta">
+                <span class="case-tag">AI Automation</span>
+                <h3>Intelligent Customer Support System</h3>
+                <p class="case-industry">Financial Technology</p>
+              </div>
+            </div>
+
+            <div class="case-content">
+              <div class="case-challenge">
+                <h4><i class="fas fa-exclamation-circle"></i> Challenge</h4>
+                <p>
+                  Support team overwhelmed with 1000+ daily queries, 4-hour
+                  average response time causing customer churn and scaling
+                  costs.
+                </p>
+              </div>
+
+              <div class="case-solution">
+                <h4><i class="fas fa-cog"></i> Solution</h4>
+                <ul>
+                  <li>AI chatbot with natural language understanding</li>
+                  <li>Multi-platform deployment (Web, WhatsApp, Telegram)</li>
+                  <li>Intelligent routing with seamless human handoff</li>
+                  <li>Machine learning for continuous improvement</li>
+                </ul>
+              </div>
+
+              <div class="case-results">
+                <h4><i class="fas fa-chart-line"></i> Business Impact</h4>
+                <div class="results-metrics">
+                  <div class="metric">
+                    <div class="metric-value">70%</div>
+                    <div class="metric-label">Queries Automated</div>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-value">2 min</div>
+                    <div class="metric-label">Avg Response</div>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-value">$50K</div>
+                    <div class="metric-label">Annual Savings</div>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-value">24/7</div>
+                    <div class="metric-label">Availability</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-stack-used">
+                <span>Python</span>
+                <span>Rasa</span>
+                <span>OpenAI</span>
+                <span>FastAPI</span>
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 3 -->
+          <div class="case-study-card">
+            <div class="case-header">
+              <div class="case-icon mobile-app">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <div class="case-meta">
+                <span class="case-tag">Mobile Application</span>
+                <h3>Real-Time Logistics Platform</h3>
+                <p class="case-industry">Supply Chain & Logistics</p>
+              </div>
+            </div>
+
+            <div class="case-content">
+              <div class="case-challenge">
+                <h4><i class="fas fa-exclamation-circle"></i> Challenge</h4>
+                <p>
+                  No visibility into package locations, constant customer calls
+                  for updates, manual dispatch causing delivery delays across
+                  100+ vehicles.
+                </p>
+              </div>
+
+              <div class="case-solution">
+                <h4><i class="fas fa-cog"></i> Solution</h4>
+                <ul>
+                  <li>Cross-platform mobile app (iOS & Android)</li>
+                  <li>Real-time GPS tracking for fleet management</li>
+                  <li>ML-powered dispatch optimization</li>
+                  <li>Customer portal with live tracking</li>
+                </ul>
+              </div>
+
+              <div class="case-results">
+                <h4><i class="fas fa-chart-line"></i> Business Impact</h4>
+                <div class="results-metrics">
+                  <div class="metric">
+                    <div class="metric-value">40%</div>
+                    <div class="metric-label">Faster Deliveries</div>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-value">90%</div>
+                    <div class="metric-label">Less Support Calls</div>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-value">4.8★</div>
+                    <div class="metric-label">App Rating</div>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-value">100K+</div>
+                    <div class="metric-label">Active Users</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-stack-used">
+                <span>React Native</span>
+                <span>Firebase</span>
+                <span>Google Maps API</span>
+                <span>Node.js</span>
+                <span>Socket.io</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 4 -->
+          <div class="case-study-card">
+            <div class="case-header">
+              <div class="case-icon cloud-infra">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <div class="case-meta">
+                <span class="case-tag">Cloud Migration</span>
+                <h3>Enterprise AWS Infrastructure</h3>
+                <p class="case-industry">SaaS Platform</p>
+              </div>
+            </div>
+
+            <div class="case-content">
+              <div class="case-challenge">
+                <h4><i class="fas fa-exclamation-circle"></i> Challenge</h4>
+                <p>
+                  On-premise infrastructure causing frequent downtime during
+                  traffic spikes, high costs, and slow deployment cycles
+                  limiting innovation.
+                </p>
+              </div>
+
+              <div class="case-solution">
+                <h4><i class="fas fa-cog"></i> Solution</h4>
+                <ul>
+                  <li>Zero-downtime AWS cloud migration</li>
+                  <li>Kubernetes auto-scaling architecture</li>
+                  <li>CI/CD pipeline with automated testing</li>
+                  <li>Infrastructure as Code using Terraform</li>
+                </ul>
+              </div>
+
+              <div class="case-results">
+                <h4><i class="fas fa-chart-line"></i> Business Impact</h4>
+                <div class="results-metrics">
+                  <div class="metric">
+                    <div class="metric-value">99.9%</div>
+                    <div class="metric-label">Uptime SLA</div>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-value">60%</div>
+                    <div class="metric-label">Cost Reduction</div>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-value">10x</div>
+                    <div class="metric-label">Deploy Frequency</div>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-value">5M+</div>
+                    <div class="metric-label">Requests/Day</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-stack-used">
+                <span>AWS</span>
+                <span>Kubernetes</span>
+                <span>Docker</span>
+                <span>Terraform</span>
+                <span>Jenkins</span>
+                <span>Prometheus</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-cta">
+          <h3>Want to see your success story here?</h3>
+          <p>
+            Let's discuss how we can transform your business with technology
+          </p>
+          <a href="#contact" class="btn btn-primary">
+            <span>Start Your Project</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">
+            Let's Build Something <span class="gradient-text">Amazing</span>
+          </h2>
+          <p class="section-subtitle">
+            Have a project in mind? We'd love to hear from you!
+          </p>
+        </div>
+
+        <div class="contact-methods-grid">
+          <a
+            href="mailto:info.darkiee@gmail.com?subject=Project%20Inquiry"
+            class="contact-method email-method"
+          >
+            <div class="method-icon"><i class="fas fa-envelope"></i></div>
+            <h4>Email Us</h4>
+            <p>Send a message</p>
+            <span class="method-value">info.darkiee@gmail.com</span>
+          </a>
+          <a
+            href="https://www.instagram.com/darkiee_networks/"
+            target="_blank"
+            class="contact-method instagram-method"
+          >
+            <div class="method-icon"><i class="fab fa-instagram"></i></div>
+            <h4>Instagram</h4>
+            <p>Follow us</p>
+            <span class="method-value">@darkiee_networks</span>
+          </a>
+          <a href="https://www.linkedin.com/company/darkiee-networks/" target="_blank" class="contact-method linkedin-method">
+            <div class="method-icon"><i class="fab fa-linkedin-in"></i></div>
+            <h4>LinkedIn</h4>
+            <p>Connect with us</p>
+            <span class="method-value">Darkiee Networks</span>
+          </a>
+        </div>
+
+        <div class="contact-form-section">
+          <div class="contact-info-box">
+            <h3>Our Office</h3>
+            <div class="info-list">
+              <div class="info-item-simple">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Location</strong>
+                  <p>
+                    Sector-B, Suryadev Nagar<br />Indore, Madhya Pradesh, India
+                  </p>
+                </div>
+              </div>
+              <div class="info-item-simple">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <strong>Business Hours</strong>
+                  <p>Monday - Saturday<br />9:00 AM - 7:00 PM IST</p>
+                </div>
+              </div>
+              <div class="info-item-simple">
+                <i class="fas fa-globe"></i>
+                <div>
+                  <strong>Follow Us</strong>
+                  <div class="social-links-inline">
+                    <a
+                      href="https://www.instagram.com/darkiee_networks/"
+                      target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a href="https://www.linkedin.com/company/darkiee-networks/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-box">
+            <h3>Send Us a Message</h3>
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Your Name *"
+                    required
+                    minlength="2"
+                    maxlength="50"
+                    pattern="[A-Za-z\s]+"
+                    title="Please enter a valid name (letters and spaces only, 2-50 characters)"
+                  />
+                  <span class="error-message" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email Address *"
+                    required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Please enter a valid email address"
+                  />
+                  <span class="error-message" id="emailError"></span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Phone Number (10 digits)"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    title="Please enter a valid 10-digit phone number"
+                  />
+                  <span class="error-message" id="phoneError"></span>
+                </div>
+                <div class="form-group">
+                  <select name="service" id="service" required>
+                    <option value="">Service Interested In *</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Mobile App Development">
+                      Mobile App Development
+                    </option>
+                    <option value="AI Automation">AI Automation</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="Cloud & DevOps">Cloud & DevOps</option>
+                    <option value="Product Branding">Product Branding</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <span class="error-message" id="serviceError"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="5"
+                  placeholder="Tell us about your project *"
+                  required
+                  minlength="10"
+                  maxlength="1000"
+                  title="Please enter your message (10-1000 characters)"
+                ></textarea>
+                <span class="error-message" id="messageError"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+              <div class="form-message" id="formMessage"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Transform Your Business?</h2>
+          <p>
+            Let's build something extraordinary together. Get in touch to
+            discuss your project.
+          </p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <span>Start Your Project</span>
+              <i class="fas fa-rocket"></i>
+            </a>
+            <a href="tel:+919399811283" class="btn btn-outline">
+              <i class="fas fa-phone"></i>
+              <span>Call Us Now</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">
+              <img
+                src="img/logo-new.png"
+                alt="Darkiee Logo"
+                class="footer-logo"
+              />
+              <span class="brand-name">Darkiee</span>
+            </div>
+            <p class="footer-desc">
+              Empowering businesses through innovative technology solutions.
+              Your trusted partner in digital transformation.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/darkiee_networks/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/darkiee-networks/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#services">Web Development</a></li>
+              <li><a href="#services">Mobile Apps</a></li>
+              <li><a href="#services">AI Automation</a></li>
+              <li><a href="#services">UI/UX Design</a></li>
+              <li><a href="#services">Cloud & DevOps</a></li>
+              <li><a href="#services">Product Branding</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Get In Touch</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span
+                  >Sector-B, Suryadev Nagar<br />Indore, Madhya Pradesh</span
+                >
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@darkiee.com">info@darkiee.com</a>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+919399811283">9399811283</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Darkiee. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main-modern.js"></script>
+
+    <!-- EmailJS Integration -->
+    <script>
+      // Initialize EmailJS with your public key
+      // Note: The private key (ZGcPrfoU1sqqcDzTDudlK) should NEVER be used in frontend code
+      // It's only for backend/server-side use. Public keys are safe to expose in client-side code.
+      (function () {
+        emailjs.init("TrjW7M7rjFVSv5pct"); // Your EmailJS Public Key
+      })();
+
+      // Handle contact form submission
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Validate form
+          if (!validateForm()) {
+            return;
+          }
+
+          const formMessage = document.getElementById("formMessage");
+          const submitBtn = event.target.querySelector('button[type="submit"]');
+          const originalBtnText = submitBtn.innerHTML;
+
+          // Show loading state
+          submitBtn.disabled = true;
+          submitBtn.innerHTML =
+            '<span>Sending...</span> <i class="fas fa-spinner fa-spin"></i>';
+          formMessage.className = "form-message";
+          formMessage.style.display = "none";
+
+          // Get current timestamp in Indian timezone
+          const now = new Date();
+          const timestamp = now.toLocaleString("en-IN", {
+            dateStyle: "full",
+            timeStyle: "short",
+            timeZone: "Asia/Kolkata",
+          });
+
+          // Get form data - Variable names must match EmailJS template
+          const templateParams = {
+            from_name: this.name.value.trim(),
+            reply_to: this.email.value.trim(),
+            phone_number: this.phone.value.trim() || "Not provided",
+            service_type: this.service.value,
+            message: this.message.value.trim(),
+            submission_time: timestamp,
+            to_email: "info.darkiee@gmail.com",
+          };
+
+          // Send email using EmailJS
+          // Service ID: service_74648l7 (Gmail service)
+          // Template ID: template_r4mojiq
+          // All configured and ready to send emails to info.darkiee@gmail.com
+          emailjs
+            .send("service_74648l7", "template_r4mojiq", templateParams)
+            .then(
+              function (response) {
+                console.log("SUCCESS!", response.status, response.text);
+
+                // Show success message
+                formMessage.className = "form-message success";
+                formMessage.style.display = "block";
+                formMessage.innerHTML =
+                  '<i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully. We\'ll get back to you within 24 hours.';
+
+                // Reset form
+                document.getElementById("contactForm").reset();
+                clearErrors();
+
+                // Reset button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                  formMessage.style.display = "none";
+                }, 5000);
+              },
+              function (error) {
+                console.log("FAILED...", error);
+
+                // Show error message
+                formMessage.className = "form-message error";
+                formMessage.style.display = "block";
+                formMessage.innerHTML =
+                  '<i class="fas fa-exclamation-circle"></i> Oops! Something went wrong. Please try again or email us directly at info.darkiee@gmail.com';
+
+                // Reset button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+              }
+            );
+        });
+
+      // Form validation function
+      function validateForm() {
+        let isValid = true;
+        clearErrors();
+
+        // Validate Name
+        const name = document.getElementById("name");
+        const nameValue = name.value.trim();
+        if (nameValue === "") {
+          showError("nameError", "Name is required");
+          isValid = false;
+        } else if (nameValue.length < 2 || nameValue.length > 50) {
+          showError("nameError", "Name must be between 2 and 50 characters");
+          isValid = false;
+        } else if (!/^[A-Za-z\s]+$/.test(nameValue)) {
+          showError("nameError", "Name should contain only letters and spaces");
+          isValid = false;
+        }
+
+        // Validate Email
+        const email = document.getElementById("email");
+        const emailValue = email.value.trim();
+        const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+        if (emailValue === "") {
+          showError("emailError", "Email is required");
+          isValid = false;
+        } else if (!emailPattern.test(emailValue)) {
+          showError("emailError", "Please enter a valid email address");
+          isValid = false;
+        }
+
+        // Validate Phone (optional but must be 10 digits if provided)
+        const phone = document.getElementById("phone");
+        const phoneValue = phone.value.trim();
+        if (phoneValue !== "") {
+          if (!/^[0-9]{10}$/.test(phoneValue)) {
+            showError("phoneError", "Phone number must be exactly 10 digits");
+            isValid = false;
+          }
+        }
+
+        // Validate Service
+        const service = document.getElementById("service");
+        if (service.value === "") {
+          showError("serviceError", "Please select a service");
+          isValid = false;
+        }
+
+        // Validate Message
+        const message = document.getElementById("message");
+        const messageValue = message.value.trim();
+        if (messageValue === "") {
+          showError("messageError", "Message is required");
+          isValid = false;
+        } else if (messageValue.length < 10) {
+          showError("messageError", "Message must be at least 10 characters");
+          isValid = false;
+        } else if (messageValue.length > 1000) {
+          showError("messageError", "Message must not exceed 1000 characters");
+          isValid = false;
+        }
+
+        return isValid;
+      }
+
+      // Show error message
+      function showError(elementId, message) {
+        const errorElement = document.getElementById(elementId);
+        errorElement.textContent = message;
+        errorElement.style.display = "block";
+
+        // Add error class to input
+        const inputElement = errorElement.previousElementSibling;
+        if (inputElement) {
+          inputElement.classList.add("input-error");
+        }
+      }
+
+      // Clear all error messages
+      function clearErrors() {
+        const errorMessages = document.querySelectorAll(".error-message");
+        errorMessages.forEach((error) => {
+          error.textContent = "";
+          error.style.display = "none";
+        });
+
+        const inputs = document.querySelectorAll(".input-error");
+        inputs.forEach((input) => {
+          input.classList.remove("input-error");
+        });
+      }
+
+      // Real-time validation on blur
+      document.getElementById("name").addEventListener("blur", function () {
+        const nameValue = this.value.trim();
+        clearFieldError("nameError");
+        if (nameValue === "") {
+          showError("nameError", "Name is required");
+        } else if (nameValue.length < 2 || nameValue.length > 50) {
+          showError("nameError", "Name must be between 2 and 50 characters");
+        } else if (!/^[A-Za-z\s]+$/.test(nameValue)) {
+          showError("nameError", "Name should contain only letters and spaces");
+        }
+      });
+
+      document.getElementById("email").addEventListener("blur", function () {
+        const emailValue = this.value.trim();
+        const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+        clearFieldError("emailError");
+        if (emailValue === "") {
+          showError("emailError", "Email is required");
+        } else if (!emailPattern.test(emailValue)) {
+          showError("emailError", "Please enter a valid email address");
+        }
+      });
+
+      document.getElementById("phone").addEventListener("blur", function () {
+        const phoneValue = this.value.trim();
+        clearFieldError("phoneError");
+        if (phoneValue !== "" && !/^[0-9]{10}$/.test(phoneValue)) {
+          showError("phoneError", "Phone number must be exactly 10 digits");
+        }
+      });
+
+      // Only allow numbers in phone field
+      document.getElementById("phone").addEventListener("input", function (e) {
+        this.value = this.value.replace(/[^0-9]/g, "").slice(0, 10);
+      });
+
+      document
+        .getElementById("service")
+        .addEventListener("change", function () {
+          clearFieldError("serviceError");
+          if (this.value === "") {
+            showError("serviceError", "Please select a service");
+          }
+        });
+
+      document.getElementById("message").addEventListener("blur", function () {
+        const messageValue = this.value.trim();
+        clearFieldError("messageError");
+        if (messageValue === "") {
+          showError("messageError", "Message is required");
+        } else if (messageValue.length < 10) {
+          showError("messageError", "Message must be at least 10 characters");
+        } else if (messageValue.length > 1000) {
+          showError("messageError", "Message must not exceed 1000 characters");
+        }
+      });
+
+      // Clear individual field error
+      function clearFieldError(errorId) {
+        const errorElement = document.getElementById(errorId);
+        errorElement.textContent = "";
+        errorElement.style.display = "none";
+
+        const inputElement = errorElement.previousElementSibling;
+        if (inputElement) {
+          inputElement.classList.remove("input-error");
+        }
+      }
+    </script>
+  </body>
 </html>
