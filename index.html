@@ -66,10 +66,7 @@
     <!-- Business Information -->
     <meta name="contact" content="info@darkiee.com" />
     <meta name="phone" content="+91-9399811283" />
-    <meta
-      name="address"
-      content="Indore, Madhya Pradesh, India"
-    />
+    <meta name="address" content="Indore, Madhya Pradesh, India" />
 
     <!-- Favicon -->
     <link rel="icon" href="img/favicon-new.png" type="image/png" />
@@ -384,9 +381,11 @@
           <div class="quick-contact-header">
             <div class="section-badge">Get In Touch</div>
             <h2>Start Your Project Today</h2>
-            <p>Fill out this quick form and we'll get back to you within 24 hours</p>
+            <p>
+              Fill out this quick form and we'll get back to you within 24 hours
+            </p>
           </div>
-          
+
           <form class="quick-contact-form" id="quickContactForm" novalidate>
             <div class="quick-form-grid">
               <div class="form-group">
@@ -479,7 +478,7 @@
               <span>Send Message</span>
               <i class="fas fa-paper-plane"></i>
             </button>
-            
+
             <div class="form-message" id="quickFormMessage"></div>
           </form>
 
@@ -1256,9 +1255,7 @@
                 <i class="fas fa-map-marker-alt"></i>
                 <div>
                   <strong>Location</strong>
-                  <p>
-                    Indore, Madhya Pradesh, India
-                  </p>
+                  <p>Indore, Madhya Pradesh, India</p>
                 </div>
               </div>
               <div class="info-item-simple">
@@ -1854,10 +1851,16 @@
           showQuickError("quickNameError", "Name is required");
           isValid = false;
         } else if (nameValue.length < 2 || nameValue.length > 50) {
-          showQuickError("quickNameError", "Name must be between 2 and 50 characters");
+          showQuickError(
+            "quickNameError",
+            "Name must be between 2 and 50 characters"
+          );
           isValid = false;
         } else if (!/^[A-Za-z\s]+$/.test(nameValue)) {
-          showQuickError("quickNameError", "Name should contain only letters and spaces");
+          showQuickError(
+            "quickNameError",
+            "Name should contain only letters and spaces"
+          );
           isValid = false;
         }
 
@@ -1869,7 +1872,10 @@
           showQuickError("quickEmailError", "Email is required");
           isValid = false;
         } else if (!emailPattern.test(emailValue)) {
-          showQuickError("quickEmailError", "Please enter a valid email address");
+          showQuickError(
+            "quickEmailError",
+            "Please enter a valid email address"
+          );
           isValid = false;
         }
 
@@ -1878,7 +1884,10 @@
         const phoneValue = phone.value.trim();
         if (phoneValue !== "") {
           if (!/^[0-9]{10}$/.test(phoneValue)) {
-            showQuickError("quickPhoneError", "Phone number must be exactly 10 digits");
+            showQuickError(
+              "quickPhoneError",
+              "Phone number must be exactly 10 digits"
+            );
             isValid = false;
           }
         }
@@ -1897,10 +1906,16 @@
           showQuickError("quickMessageError", "Message is required");
           isValid = false;
         } else if (messageValue.length < 10) {
-          showQuickError("quickMessageError", "Message must be at least 10 characters");
+          showQuickError(
+            "quickMessageError",
+            "Message must be at least 10 characters"
+          );
           isValid = false;
         } else if (messageValue.length > 1000) {
-          showQuickError("quickMessageError", "Message must not exceed 1000 characters");
+          showQuickError(
+            "quickMessageError",
+            "Message must not exceed 1000 characters"
+          );
           isValid = false;
         }
 
@@ -1927,7 +1942,7 @@
           "quickEmailError",
           "quickPhoneError",
           "quickServiceError",
-          "quickMessageError"
+          "quickMessageError",
         ];
 
         errorIds.forEach((errorId) => {
@@ -1938,87 +1953,104 @@
           }
         });
 
-        const inputs = document.querySelectorAll("#quickContactForm .input-error");
+        const inputs = document.querySelectorAll(
+          "#quickContactForm .input-error"
+        );
         inputs.forEach((input) => {
           input.classList.remove("input-error");
         });
       }
 
       // Real-time validation for quick form
-      document.getElementById("quick-name").addEventListener("blur", function() {
-        const nameValue = this.value.trim();
-        const errorId = "quickNameError";
-        document.getElementById(errorId).textContent = "";
-        document.getElementById(errorId).style.display = "none";
-        this.classList.remove("input-error");
-        
-        if (nameValue === "") {
-          showQuickError(errorId, "Name is required");
-        } else if (nameValue.length < 2 || nameValue.length > 50) {
-          showQuickError(errorId, "Name must be between 2 and 50 characters");
-        } else if (!/^[A-Za-z\s]+$/.test(nameValue)) {
-          showQuickError(errorId, "Name should contain only letters and spaces");
-        }
-      });
+      document
+        .getElementById("quick-name")
+        .addEventListener("blur", function () {
+          const nameValue = this.value.trim();
+          const errorId = "quickNameError";
+          document.getElementById(errorId).textContent = "";
+          document.getElementById(errorId).style.display = "none";
+          this.classList.remove("input-error");
 
-      document.getElementById("quick-email").addEventListener("blur", function() {
-        const emailValue = this.value.trim();
-        const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
-        const errorId = "quickEmailError";
-        document.getElementById(errorId).textContent = "";
-        document.getElementById(errorId).style.display = "none";
-        this.classList.remove("input-error");
-        
-        if (emailValue === "") {
-          showQuickError(errorId, "Email is required");
-        } else if (!emailPattern.test(emailValue)) {
-          showQuickError(errorId, "Please enter a valid email address");
-        }
-      });
+          if (nameValue === "") {
+            showQuickError(errorId, "Name is required");
+          } else if (nameValue.length < 2 || nameValue.length > 50) {
+            showQuickError(errorId, "Name must be between 2 and 50 characters");
+          } else if (!/^[A-Za-z\s]+$/.test(nameValue)) {
+            showQuickError(
+              errorId,
+              "Name should contain only letters and spaces"
+            );
+          }
+        });
 
-      document.getElementById("quick-phone").addEventListener("blur", function() {
-        const phoneValue = this.value.trim();
-        const errorId = "quickPhoneError";
-        document.getElementById(errorId).textContent = "";
-        document.getElementById(errorId).style.display = "none";
-        this.classList.remove("input-error");
-        
-        if (phoneValue !== "" && !/^[0-9]{10}$/.test(phoneValue)) {
-          showQuickError(errorId, "Phone number must be exactly 10 digits");
-        }
-      });
+      document
+        .getElementById("quick-email")
+        .addEventListener("blur", function () {
+          const emailValue = this.value.trim();
+          const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+          const errorId = "quickEmailError";
+          document.getElementById(errorId).textContent = "";
+          document.getElementById(errorId).style.display = "none";
+          this.classList.remove("input-error");
+
+          if (emailValue === "") {
+            showQuickError(errorId, "Email is required");
+          } else if (!emailPattern.test(emailValue)) {
+            showQuickError(errorId, "Please enter a valid email address");
+          }
+        });
+
+      document
+        .getElementById("quick-phone")
+        .addEventListener("blur", function () {
+          const phoneValue = this.value.trim();
+          const errorId = "quickPhoneError";
+          document.getElementById(errorId).textContent = "";
+          document.getElementById(errorId).style.display = "none";
+          this.classList.remove("input-error");
+
+          if (phoneValue !== "" && !/^[0-9]{10}$/.test(phoneValue)) {
+            showQuickError(errorId, "Phone number must be exactly 10 digits");
+          }
+        });
 
       // Only allow numbers in quick phone field
-      document.getElementById("quick-phone").addEventListener("input", function(e) {
-        this.value = this.value.replace(/[^0-9]/g, "").slice(0, 10);
-      });
+      document
+        .getElementById("quick-phone")
+        .addEventListener("input", function (e) {
+          this.value = this.value.replace(/[^0-9]/g, "").slice(0, 10);
+        });
 
-      document.getElementById("quick-service").addEventListener("change", function() {
-        const errorId = "quickServiceError";
-        document.getElementById(errorId).textContent = "";
-        document.getElementById(errorId).style.display = "none";
-        this.classList.remove("input-error");
-        
-        if (this.value === "") {
-          showQuickError(errorId, "Please select a service");
-        }
-      });
+      document
+        .getElementById("quick-service")
+        .addEventListener("change", function () {
+          const errorId = "quickServiceError";
+          document.getElementById(errorId).textContent = "";
+          document.getElementById(errorId).style.display = "none";
+          this.classList.remove("input-error");
 
-      document.getElementById("quick-message").addEventListener("blur", function() {
-        const messageValue = this.value.trim();
-        const errorId = "quickMessageError";
-        document.getElementById(errorId).textContent = "";
-        document.getElementById(errorId).style.display = "none";
-        this.classList.remove("input-error");
-        
-        if (messageValue === "") {
-          showQuickError(errorId, "Message is required");
-        } else if (messageValue.length < 10) {
-          showQuickError(errorId, "Message must be at least 10 characters");
-        } else if (messageValue.length > 1000) {
-          showQuickError(errorId, "Message must not exceed 1000 characters");
-        }
-      });
+          if (this.value === "") {
+            showQuickError(errorId, "Please select a service");
+          }
+        });
+
+      document
+        .getElementById("quick-message")
+        .addEventListener("blur", function () {
+          const messageValue = this.value.trim();
+          const errorId = "quickMessageError";
+          document.getElementById(errorId).textContent = "";
+          document.getElementById(errorId).style.display = "none";
+          this.classList.remove("input-error");
+
+          if (messageValue === "") {
+            showQuickError(errorId, "Message is required");
+          } else if (messageValue.length < 10) {
+            showQuickError(errorId, "Message must be at least 10 characters");
+          } else if (messageValue.length > 1000) {
+            showQuickError(errorId, "Message must not exceed 1000 characters");
+          }
+        });
     </script>
   </body>
 </html>
