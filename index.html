@@ -68,7 +68,7 @@
     <meta name="phone" content="+91-9399811283" />
     <meta
       name="address"
-      content="Sector-B, Suryadev Nagar, Indore, Madhya Pradesh, India"
+      content="Indore, Madhya Pradesh, India"
     />
 
     <!-- Favicon -->
@@ -120,7 +120,6 @@
             "telephone": "+91-9399811283",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Sector-B, Suryadev Nagar",
               "addressLocality": "Indore",
               "addressRegion": "Madhya Pradesh",
               "postalCode": "452001",
@@ -149,7 +148,6 @@
             "priceRange": "$$",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Sector-B, Suryadev Nagar",
               "addressLocality": "Indore",
               "addressRegion": "Madhya Pradesh",
               "postalCode": "452001",
@@ -376,6 +374,130 @@
       <div class="scroll-indicator">
         <span>Scroll</span>
         <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Quick Contact Section (Top of Page) -->
+    <section class="quick-contact-section" id="quick-contact">
+      <div class="container">
+        <div class="quick-contact-wrapper">
+          <div class="quick-contact-header">
+            <div class="section-badge">Get In Touch</div>
+            <h2>Start Your Project Today</h2>
+            <p>Fill out this quick form and we'll get back to you within 24 hours</p>
+          </div>
+          
+          <form class="quick-contact-form" id="quickContactForm" novalidate>
+            <div class="quick-form-grid">
+              <div class="form-group">
+                <label for="quick-name">
+                  <i class="fas fa-user"></i>
+                  <span>Your Name *</span>
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="quick-name"
+                  placeholder="John Doe"
+                  required
+                  minlength="2"
+                  maxlength="50"
+                  pattern="[A-Za-z\s]+"
+                />
+                <span class="error-message" id="quickNameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="quick-email">
+                  <i class="fas fa-envelope"></i>
+                  <span>Email Address *</span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="quick-email"
+                  placeholder="john@example.com"
+                  required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                />
+                <span class="error-message" id="quickEmailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="quick-phone">
+                  <i class="fas fa-phone"></i>
+                  <span>Phone Number</span>
+                </label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="quick-phone"
+                  placeholder="9399811283"
+                  pattern="[0-9]{10}"
+                  maxlength="10"
+                />
+                <span class="error-message" id="quickPhoneError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="quick-service">
+                  <i class="fas fa-briefcase"></i>
+                  <span>Service Needed *</span>
+                </label>
+                <select name="service" id="quick-service" required>
+                  <option value="">Select a service</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="Mobile App Development">Mobile Apps</option>
+                  <option value="AI Automation">AI Automation</option>
+                  <option value="UI/UX Design">UI/UX Design</option>
+                  <option value="Cloud & DevOps">Cloud & DevOps</option>
+                  <option value="Product Branding">Product Branding</option>
+                  <option value="Other">Other</option>
+                </select>
+                <span class="error-message" id="quickServiceError"></span>
+              </div>
+
+              <div class="form-group form-group-full">
+                <label for="quick-message">
+                  <i class="fas fa-comment-dots"></i>
+                  <span>Project Details *</span>
+                </label>
+                <textarea
+                  name="message"
+                  id="quick-message"
+                  rows="4"
+                  placeholder="Tell us about your project..."
+                  required
+                  minlength="10"
+                  maxlength="1000"
+                ></textarea>
+                <span class="error-message" id="quickMessageError"></span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full btn-submit">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            
+            <div class="form-message" id="quickFormMessage"></div>
+          </form>
+
+          <div class="quick-contact-info">
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <span>24-hour response time</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>100% confidential</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-handshake"></i>
+              <span>Free consultation</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1135,7 +1257,7 @@
                 <div>
                   <strong>Location</strong>
                   <p>
-                    Sector-B, Suryadev Nagar<br />Indore, Madhya Pradesh, India
+                    Indore, Madhya Pradesh, India
                   </p>
                 </div>
               </div>
@@ -1344,9 +1466,7 @@
             <ul class="contact-info">
               <li>
                 <i class="fas fa-map-marker-alt"></i>
-                <span
-                  >Sector-B, Suryadev Nagar<br />Indore, Madhya Pradesh</span
-                >
+                <span>Indore, Madhya Pradesh, India</span>
               </li>
               <li>
                 <i class="fas fa-envelope"></i>
@@ -1634,6 +1754,271 @@
           inputElement.classList.remove("input-error");
         }
       }
+
+      // ========================================
+      // QUICK CONTACT FORM (Top of Page)
+      // ========================================
+
+      // Handle quick contact form submission
+      document
+        .getElementById("quickContactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Validate quick form
+          if (!validateQuickForm()) {
+            return;
+          }
+
+          const formMessage = document.getElementById("quickFormMessage");
+          const submitBtn = event.target.querySelector('button[type="submit"]');
+          const originalBtnText = submitBtn.innerHTML;
+
+          // Show loading state
+          submitBtn.disabled = true;
+          submitBtn.innerHTML =
+            '<span>Sending...</span> <i class="fas fa-spinner fa-spin"></i>';
+          formMessage.className = "form-message";
+          formMessage.style.display = "none";
+
+          // Get current timestamp in Indian timezone
+          const now = new Date();
+          const timestamp = now.toLocaleString("en-IN", {
+            dateStyle: "full",
+            timeStyle: "short",
+            timeZone: "Asia/Kolkata",
+          });
+
+          // Get form data - Variable names must match EmailJS template
+          const templateParams = {
+            from_name: this.name.value.trim(),
+            reply_to: this.email.value.trim(),
+            phone_number: this.phone.value.trim() || "Not provided",
+            service_type: this.service.value,
+            message: this.message.value.trim(),
+            submission_time: timestamp,
+            to_email: "info.darkiee@gmail.com",
+          };
+
+          // Send email using EmailJS
+          emailjs
+            .send("service_74648l7", "template_r4mojiq", templateParams)
+            .then(
+              function (response) {
+                console.log("SUCCESS!", response.status, response.text);
+
+                // Show success message
+                formMessage.className = "form-message success";
+                formMessage.style.display = "block";
+                formMessage.innerHTML =
+                  '<i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully. We\'ll get back to you within 24 hours.';
+
+                // Reset form
+                document.getElementById("quickContactForm").reset();
+                clearQuickFormErrors();
+
+                // Reset button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                  formMessage.style.display = "none";
+                }, 5000);
+              },
+              function (error) {
+                console.log("FAILED...", error);
+
+                // Show error message
+                formMessage.className = "form-message error";
+                formMessage.style.display = "block";
+                formMessage.innerHTML =
+                  '<i class="fas fa-exclamation-circle"></i> Oops! Something went wrong. Please try again or email us directly at info.darkiee@gmail.com';
+
+                // Reset button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+              }
+            );
+        });
+
+      // Quick form validation function
+      function validateQuickForm() {
+        let isValid = true;
+        clearQuickFormErrors();
+
+        // Validate Name
+        const name = document.getElementById("quick-name");
+        const nameValue = name.value.trim();
+        if (nameValue === "") {
+          showQuickError("quickNameError", "Name is required");
+          isValid = false;
+        } else if (nameValue.length < 2 || nameValue.length > 50) {
+          showQuickError("quickNameError", "Name must be between 2 and 50 characters");
+          isValid = false;
+        } else if (!/^[A-Za-z\s]+$/.test(nameValue)) {
+          showQuickError("quickNameError", "Name should contain only letters and spaces");
+          isValid = false;
+        }
+
+        // Validate Email
+        const email = document.getElementById("quick-email");
+        const emailValue = email.value.trim();
+        const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+        if (emailValue === "") {
+          showQuickError("quickEmailError", "Email is required");
+          isValid = false;
+        } else if (!emailPattern.test(emailValue)) {
+          showQuickError("quickEmailError", "Please enter a valid email address");
+          isValid = false;
+        }
+
+        // Validate Phone (optional but must be 10 digits if provided)
+        const phone = document.getElementById("quick-phone");
+        const phoneValue = phone.value.trim();
+        if (phoneValue !== "") {
+          if (!/^[0-9]{10}$/.test(phoneValue)) {
+            showQuickError("quickPhoneError", "Phone number must be exactly 10 digits");
+            isValid = false;
+          }
+        }
+
+        // Validate Service
+        const service = document.getElementById("quick-service");
+        if (service.value === "") {
+          showQuickError("quickServiceError", "Please select a service");
+          isValid = false;
+        }
+
+        // Validate Message
+        const message = document.getElementById("quick-message");
+        const messageValue = message.value.trim();
+        if (messageValue === "") {
+          showQuickError("quickMessageError", "Message is required");
+          isValid = false;
+        } else if (messageValue.length < 10) {
+          showQuickError("quickMessageError", "Message must be at least 10 characters");
+          isValid = false;
+        } else if (messageValue.length > 1000) {
+          showQuickError("quickMessageError", "Message must not exceed 1000 characters");
+          isValid = false;
+        }
+
+        return isValid;
+      }
+
+      // Show quick form error message
+      function showQuickError(elementId, message) {
+        const errorElement = document.getElementById(elementId);
+        errorElement.textContent = message;
+        errorElement.style.display = "block";
+
+        // Add error class to input
+        const inputElement = errorElement.previousElementSibling;
+        if (inputElement) {
+          inputElement.classList.add("input-error");
+        }
+      }
+
+      // Clear all quick form error messages
+      function clearQuickFormErrors() {
+        const errorIds = [
+          "quickNameError",
+          "quickEmailError",
+          "quickPhoneError",
+          "quickServiceError",
+          "quickMessageError"
+        ];
+
+        errorIds.forEach((errorId) => {
+          const errorElement = document.getElementById(errorId);
+          if (errorElement) {
+            errorElement.textContent = "";
+            errorElement.style.display = "none";
+          }
+        });
+
+        const inputs = document.querySelectorAll("#quickContactForm .input-error");
+        inputs.forEach((input) => {
+          input.classList.remove("input-error");
+        });
+      }
+
+      // Real-time validation for quick form
+      document.getElementById("quick-name").addEventListener("blur", function() {
+        const nameValue = this.value.trim();
+        const errorId = "quickNameError";
+        document.getElementById(errorId).textContent = "";
+        document.getElementById(errorId).style.display = "none";
+        this.classList.remove("input-error");
+        
+        if (nameValue === "") {
+          showQuickError(errorId, "Name is required");
+        } else if (nameValue.length < 2 || nameValue.length > 50) {
+          showQuickError(errorId, "Name must be between 2 and 50 characters");
+        } else if (!/^[A-Za-z\s]+$/.test(nameValue)) {
+          showQuickError(errorId, "Name should contain only letters and spaces");
+        }
+      });
+
+      document.getElementById("quick-email").addEventListener("blur", function() {
+        const emailValue = this.value.trim();
+        const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+        const errorId = "quickEmailError";
+        document.getElementById(errorId).textContent = "";
+        document.getElementById(errorId).style.display = "none";
+        this.classList.remove("input-error");
+        
+        if (emailValue === "") {
+          showQuickError(errorId, "Email is required");
+        } else if (!emailPattern.test(emailValue)) {
+          showQuickError(errorId, "Please enter a valid email address");
+        }
+      });
+
+      document.getElementById("quick-phone").addEventListener("blur", function() {
+        const phoneValue = this.value.trim();
+        const errorId = "quickPhoneError";
+        document.getElementById(errorId).textContent = "";
+        document.getElementById(errorId).style.display = "none";
+        this.classList.remove("input-error");
+        
+        if (phoneValue !== "" && !/^[0-9]{10}$/.test(phoneValue)) {
+          showQuickError(errorId, "Phone number must be exactly 10 digits");
+        }
+      });
+
+      // Only allow numbers in quick phone field
+      document.getElementById("quick-phone").addEventListener("input", function(e) {
+        this.value = this.value.replace(/[^0-9]/g, "").slice(0, 10);
+      });
+
+      document.getElementById("quick-service").addEventListener("change", function() {
+        const errorId = "quickServiceError";
+        document.getElementById(errorId).textContent = "";
+        document.getElementById(errorId).style.display = "none";
+        this.classList.remove("input-error");
+        
+        if (this.value === "") {
+          showQuickError(errorId, "Please select a service");
+        }
+      });
+
+      document.getElementById("quick-message").addEventListener("blur", function() {
+        const messageValue = this.value.trim();
+        const errorId = "quickMessageError";
+        document.getElementById(errorId).textContent = "";
+        document.getElementById(errorId).style.display = "none";
+        this.classList.remove("input-error");
+        
+        if (messageValue === "") {
+          showQuickError(errorId, "Message is required");
+        } else if (messageValue.length < 10) {
+          showQuickError(errorId, "Message must be at least 10 characters");
+        } else if (messageValue.length > 1000) {
+          showQuickError(errorId, "Message must not exceed 1000 characters");
+        }
+      });
     </script>
   </body>
 </html>
