@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Careers - Join the Darkiee Team</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      name="description"
+      content="Join Darkiee - Explore exciting career opportunities in web development, mobile apps, AI automation, and cloud solutions. Remote-first culture with global impact."
+    />
+    <meta
+      name="keywords"
+      content="Careers, Jobs, Internship, Darkiee, Remote Jobs, Tech Careers, Developer Jobs, Design Jobs"
+    />
+    <meta name="author" content="Deepak Patidar" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon-new.png" type="image/png" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style-modern.css" rel="stylesheet" />
+
+    <style>
+      body {
+        background: #0f172a;
+        color: #f1f5f9;
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', -apple-system, sans-serif;
+      }
+
+      /* Navigation Styles */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .container-nav {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+      }
+
+      .nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+      }
+
+      .nav-brand .logo {
+        width: 45px;
+        height: 45px;
+      }
+
+      .nav-brand .brand-name {
+        font-size: 24px;
+        font-weight: 700;
+        background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .nav-menu {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-link {
+        color: #cbd5e1;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 15px;
+        transition: color 0.3s ease;
+        position: relative;
+      }
+
+      .nav-link:hover,
+      .nav-link.active {
+        color: #6366f1;
+      }
+
+      .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        border-radius: 2px;
+      }
+
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .cta-btn {
+        padding: 12px 28px;
+        background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+      }
+
+      .cta-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+        color: white;
+      }
+
+      .menu-toggle {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+      }
+
+      .menu-toggle span {
+        width: 25px;
+        height: 2px;
+        background: #f1f5f9;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+      }
+
+      /* Footer Styles */
+      .footer {
+        background: rgba(15, 23, 42, 0.95);
+        border-top: 1px solid rgba(99, 102, 241, 0.1);
+        padding: 60px 0 30px;
+        margin-top: 100px;
+      }
+
+      .container-footer {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 60px;
+        margin-bottom: 40px;
+      }
+
+      .footer-brand p {
+        color: #94a3b8;
+        margin: 20px 0;
+        line-height: 1.6;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .social-links a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(99, 102, 241, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #6366f1;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .social-links a:hover {
+        background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        color: white;
+        transform: translateY(-3px);
+      }
+
+      .footer-info h4 {
+        color: #f1f5f9;
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+
+      .footer-info ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .footer-info ul li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 15px;
+        color: #94a3b8;
+      }
+
+      .footer-info ul li i {
+        color: #6366f1;
+        width: 20px;
+      }
+
+      .footer-info ul li a {
+        color: #94a3b8;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .footer-info ul li a:hover {
+        color: #6366f1;
+      }
+
+      .footer-bottom {
+        padding-top: 30px;
+        border-top: 1px solid rgba(99, 102, 241, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .footer-bottom p {
+        color: #64748b;
+        margin: 0;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 25px;
+      }
+
+      .footer-links a {
+        color: #94a3b8;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s ease;
+      }
+
+      .footer-links a:hover {
+        color: #6366f1;
+      }
+
+      /* Mobile Menu */
+      @media (max-width: 992px) {
+        .menu-toggle {
+          display: flex;
+        }
+
+        .nav-menu {
+          position: fixed;
+          top: 80px;
+          left: -100%;
+          width: 100%;
+          height: calc(100vh - 80px);
+          background: rgba(15, 23, 42, 0.98);
+          backdrop-filter: blur(10px);
+          flex-direction: column;
+          padding: 40px 20px;
+          gap: 20px;
+          transition: left 0.3s ease;
+        }
+
+        .nav-menu.active {
+          left: 0;
+        }
+
+        .nav-link.active::after {
+          display: none;
+        }
+
+        .footer-content {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+
+        .footer-bottom {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+
+      /* Hero Section */
+      .careers-hero {
+        padding: 180px 20px 100px;
+        text-align: center;
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .careers-hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          circle at 50% 50%,
+          rgba(99, 102, 241, 0.1) 0%,
+          transparent 50%
+        );
+      }
+
+      .careers-hero h1 {
+        font-size: 56px;
+        font-weight: 700;
+        background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .careers-hero p {
+        font-size: 20px;
+        color: #cbd5e1;
+        max-width: 700px;
+        margin: 0 auto 40px;
+        position: relative;
+      }
+
+      .hero-stats {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin-top: 50px;
+        position: relative;
+      }
+
+      .stat-item {
+        text-align: center;
+      }
+
+      .stat-item h3 {
+        font-size: 36px;
+        font-weight: 700;
+        background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .stat-item p {
+        color: #94a3b8;
+        font-size: 14px;
+        margin: 0;
+      }
+
+      /* Culture Section */
+      .culture-section {
+        padding: 100px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-title h2 {
+        font-size: 42px;
+        font-weight: 700;
+        background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 15px;
+      }
+
+      .section-title p {
+        color: #94a3b8;
+        font-size: 18px;
+      }
+
+      .culture-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .culture-card {
+        background: rgba(30, 41, 59, 0.5);
+        border: 1px solid rgba(99, 102, 241, 0.2);
+        border-radius: 15px;
+        padding: 40px 30px;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+
+      .culture-card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(99, 102, 241, 0.5);
+        box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+      }
+
+      .culture-card i {
+        font-size: 48px;
+        background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 20px;
+      }
+
+      .culture-card h3 {
+        font-size: 22px;
+        color: #f1f5f9;
+        margin-bottom: 15px;
+      }
+
+      .culture-card p {
+        color: #cbd5e1;
+        line-height: 1.6;
+      }
+
+      /* Positions Section */
+      .positions-section {
+        padding: 100px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .opportunities-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .opportunity-card {
+        background: rgba(30, 41, 59, 0.5);
+        border: 1px solid rgba(99, 102, 241, 0.2);
+        border-radius: 15px;
+        padding: 40px 30px;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+
+      .opportunity-card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(99, 102, 241, 0.5);
+        box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+      }
+
+      .opportunity-card i {
+        font-size: 48px;
+        background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 20px;
+        display: block;
+      }
+
+      .opportunity-card h3 {
+        font-size: 22px;
+        color: #f1f5f9;
+        margin-bottom: 15px;
+      }
+
+      .opportunity-card p {
+        color: #cbd5e1;
+        line-height: 1.6;
+        font-size: 15px;
+      }
+
+      /* Application Form */
+      .application-section {
+        padding: 100px 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        background: rgba(30, 41, 59, 0.3);
+        border-radius: 20px;
+      }
+
+      .form-container {
+        background: rgba(30, 41, 59, 0.5);
+        border: 1px solid rgba(99, 102, 241, 0.2);
+        border-radius: 20px;
+        padding: 50px;
+        margin-top: 40px;
+      }
+
+      .form-group {
+        margin-bottom: 25px;
+      }
+
+      .form-group label {
+        display: block;
+        color: #f1f5f9;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-size: 15px;
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        width: 100%;
+        padding: 15px 20px;
+        background: rgba(15, 23, 42, 0.5);
+        border: 1px solid rgba(99, 102, 241, 0.3);
+        border-radius: 10px;
+        color: #f1f5f9;
+        font-size: 15px;
+        transition: all 0.3s ease;
+      }
+
+      .form-group input:focus,
+      .form-group select:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: #6366f1;
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      .form-group input::placeholder,
+      .form-group textarea::placeholder {
+        color: #64748b;
+      }
+
+      .form-group select option {
+        background: #1e293b;
+        color: #f1f5f9;
+      }
+
+      .submit-btn {
+        width: 100%;
+        padding: 18px;
+        background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 10px;
+      }
+
+      .submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 15px 30px rgba(99, 102, 241, 0.4);
+      }
+
+      .submit-btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+
+      .form-message {
+        display: none;
+        padding: 15px 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 500;
+      }
+
+      .form-message.success {
+        background: rgba(16, 185, 129, 0.2);
+        border: 1px solid rgba(16, 185, 129, 0.4);
+        color: #10b981;
+      }
+
+      .form-message.error {
+        background: rgba(239, 68, 68, 0.2);
+        border: 1px solid rgba(239, 68, 68, 0.4);
+        color: #ef4444;
+      }
+
+      .back-home {
+        text-align: center;
+        margin-top: 60px;
+      }
+
+      .back-home a {
+        display: inline-block;
+        padding: 15px 40px;
+        background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+      }
+
+      .back-home a:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 20px 30px rgba(99, 102, 241, 0.4);
+        color: white;
+      }
+
+      .back-home a i {
+        margin-right: 8px;
+      }
+
+      @media (max-width: 768px) {
+        .careers-hero h1 {
+          font-size: 36px;
+        }
+
+        .hero-stats {
+          flex-direction: column;
+          gap: 30px;
+        }
+
+        .form-container {
+          padding: 30px 20px;
+        }
+
+        .opportunities-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container-nav">
+        <div class="nav-brand">
+          <img src="img/logo-new.png" alt="Darkiee Logo" class="logo" />
+          <span class="brand-name">Darkiee</span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html#home" class="nav-link">Home</a></li>
+          <li><a href="index.html#services" class="nav-link">Services</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="careers.html" class="nav-link active">Careers</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="index.html#contact" class="cta-btn">Get Started</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="careers-hero">
+      <div class="container">
+        <h1>Join the Darkiee Team</h1>
+        <p>
+          Build the future of technology with us. We're looking for passionate individuals who
+          want to make a real impact through innovative solutions.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>Remote First</h3>
+            <p>Work from anywhere</p>
+          </div>
+          <div class="stat-item">
+            <h3>15+ Countries</h3>
+            <p>Global team & clients</p>
+          </div>
+          <div class="stat-item">
+            <h3>Growth Focused</h3>
+            <p>Learning & development</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section class="culture-section">
+      <div class="section-title">
+        <h2>Why Join Darkiee?</h2>
+        <p>We're building more than just products—we're building careers and community</p>
+      </div>
+
+      <div class="culture-grid">
+        <div class="culture-card">
+          <i class="fas fa-rocket"></i>
+          <h3>Innovation First</h3>
+          <p>Work with cutting-edge technologies and solve complex challenges that matter.</p>
+        </div>
+
+        <div class="culture-card">
+          <i class="fas fa-users"></i>
+          <h3>Collaborative Culture</h3>
+          <p>Join a team of experts who support each other and celebrate wins together.</p>
+        </div>
+
+        <div class="culture-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Career Growth</h3>
+          <p>₹30,000/year learning budget, mentorship programs, and clear career paths.</p>
+        </div>
+
+        <div class="culture-card">
+          <i class="fas fa-laptop-house"></i>
+          <h3>Work-Life Balance</h3>
+          <p>Flexible hours, remote-first approach, and focus on results over hours.</p>
+        </div>
+
+        <div class="culture-card">
+          <i class="fas fa-award"></i>
+          <h3>Competitive Benefits</h3>
+          <p>Market-leading compensation, equipment allowance, and health benefits.</p>
+        </div>
+
+        <div class="culture-card">
+          <i class="fas fa-globe"></i>
+          <h3>Global Impact</h3>
+          <p>Work on projects that serve clients across 15+ countries worldwide.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Positions Section -->
+    <section class="positions-section">
+      <div class="section-title">
+        <h2>Join Our Team</h2>
+        <p>We're always looking for talented individuals to join our growing team</p>
+      </div>
+
+      <div class="opportunities-grid">
+        <div class="opportunity-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Development</h3>
+          <p>Full Stack, Mobile, Backend, Frontend positions across all experience levels</p>
+        </div>
+
+        <div class="opportunity-card">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Design</h3>
+          <p>UI/UX Design, Graphic Design, Product Design opportunities</p>
+        </div>
+
+        <div class="opportunity-card">
+          <i class="fas fa-brain"></i>
+          <h3>AI & Data</h3>
+          <p>AI/ML Engineering, Data Science, Automation roles</p>
+        </div>
+
+        <div class="opportunity-card">
+          <i class="fas fa-server"></i>
+          <h3>DevOps & Cloud</h3>
+          <p>Cloud Architecture, DevOps, Infrastructure positions</p>
+        </div>
+
+        <div class="opportunity-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Internships</h3>
+          <p>3-6 month paid internships across all departments</p>
+        </div>
+
+        <div class="opportunity-card">
+          <i class="fas fa-handshake"></i>
+          <h3>Consulting</h3>
+          <p>Project-based and contract opportunities available</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section class="application-section" id="apply">
+      <div class="section-title">
+        <h2>Submit Your Application</h2>
+        <p>Tell us about yourself and the role you're interested in</p>
+      </div>
+
+      <div class="form-container">
+        <form id="applicationForm" action="https://formspree.io/f/mwpwwzvq" method="POST">
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input
+              type="text"
+              id="fullName"
+              name="name"
+              required
+              placeholder="Enter your full name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="your.email@example.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="10-digit mobile number"
+              pattern="[0-9]{10}"
+              maxlength="10"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="position">Position/Role Interested In *</label>
+            <select id="position" name="position" required>
+              <option value="">Select a role</option>
+              <optgroup label="Development">
+                <option value="Full Stack Developer">Full Stack Developer</option>
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="Backend Developer">Backend Developer</option>
+                <option value="Mobile App Developer">Mobile App Developer</option>
+                <option value="Development Intern">Development Intern</option>
+              </optgroup>
+              <optgroup label="Design">
+                <option value="UI/UX Designer">UI/UX Designer</option>
+                <option value="Graphic Designer">Graphic Designer</option>
+                <option value="Product Designer">Product Designer</option>
+                <option value="Design Intern">Design Intern</option>
+              </optgroup>
+              <optgroup label="AI & Data">
+                <option value="AI/ML Engineer">AI/ML Engineer</option>
+                <option value="Data Scientist">Data Scientist</option>
+                <option value="AI Automation Specialist">AI Automation Specialist</option>
+                <option value="AI/ML Intern">AI/ML Intern</option>
+              </optgroup>
+              <optgroup label="DevOps & Cloud">
+                <option value="DevOps Engineer">DevOps Engineer</option>
+                <option value="Cloud Architect">Cloud Architect</option>
+                <option value="Site Reliability Engineer">Site Reliability Engineer</option>
+              </optgroup>
+              <optgroup label="Other">
+                <option value="Project Manager">Project Manager</option>
+                <option value="Business Analyst">Business Analyst</option>
+                <option value="Quality Assurance">Quality Assurance</option>
+                <option value="Other">Other (Specify in cover letter)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="jobType">Employment Type *</label>
+            <select id="jobType" name="jobType" required>
+              <option value="">Select employment type</option>
+              <option value="Full-Time">Full-Time</option>
+              <option value="Part-Time">Part-Time</option>
+              <option value="Internship">Internship (3-6 months)</option>
+              <option value="Contract">Contract/Project-based</option>
+              <option value="Freelance">Freelance</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="experience">Years of Experience *</label>
+            <select id="experience" name="experience" required>
+              <option value="">Select experience level</option>
+              <option value="Fresher">Fresher (0 years)</option>
+              <option value="0-1 years">0-1 years</option>
+              <option value="1-2 years">1-2 years</option>
+              <option value="2-4 years">2-4 years</option>
+              <option value="4-6 years">4-6 years</option>
+              <option value="6+ years">6+ years</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="linkedin">LinkedIn Profile</label>
+            <input
+              type="url"
+              id="linkedin"
+              name="linkedin"
+              placeholder="https://linkedin.com/in/yourprofile"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="portfolio">Portfolio/GitHub Link</label>
+            <input
+              type="url"
+              id="portfolio"
+              name="portfolio"
+              placeholder="https://github.com/yourusername or your portfolio URL"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="resume">Resume/CV Link *</label>
+            <input
+              type="url"
+              id="resume"
+              name="resume"
+              required
+              placeholder="https://drive.google.com/... or https://dropbox.com/..."
+            />
+            <small style="color: #94a3b8; font-size: 13px; display: block; margin-top: 8px;">
+              <i class="fas fa-info-circle"></i> Upload your resume to Google Drive, Dropbox, or OneDrive and paste the shareable link here
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label for="coverLetter">Cover Letter / Why Darkiee? *</label>
+            <textarea
+              id="coverLetter"
+              name="coverLetter"
+              required
+              placeholder="Tell us why you want to join Darkiee and what makes you a great fit for this role..."
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="availability">When can you start? *</label>
+            <select id="availability" name="availability" required>
+              <option value="">Select availability</option>
+              <option value="Immediately">Immediately</option>
+              <option value="Within 2 weeks">Within 2 weeks</option>
+              <option value="Within 1 month">Within 1 month</option>
+              <option value="After 1 month">After 1 month</option>
+            </select>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Submit Application
+          </button>
+
+          <div class="form-message" id="formMessage"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="nav-brand">
+              <img src="img/logo-new.png" alt="Darkiee Logo" class="logo" />
+              <span class="brand-name">Darkiee</span>
+            </div>
+            <p>Empowering businesses through innovative technology solutions.</p>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/darkiee_networks/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/darkiee-networks/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-info">
+            <h4>Contact Info</h4>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Indore, Madhya Pradesh, India</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:support@darkiee.com">support@darkiee.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Darkiee. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="careers.html">Careers</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+      // Mobile Menu Toggle
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+
+      menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+      });
+
+      // Close menu when clicking on a link
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('active');
+          menuToggle.classList.remove('active');
+        });
+      });
+
+      // Form submission
+      const applicationForm = document.getElementById("applicationForm");
+      const formMessage = document.getElementById("formMessage");
+
+      applicationForm.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const submitBtn = this.querySelector(".submit-btn");
+        const originalBtnText = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+
+        try {
+          const formData = new FormData(this);
+          
+          const response = await fetch(this.action, {
+            method: this.method,
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          });
+
+          if (response.ok) {
+            formMessage.className = "form-message success";
+            formMessage.innerHTML =
+              '<i class="fas fa-check-circle"></i> Thank you! Your application has been submitted successfully. We\'ll review it and get back to you soon.';
+            formMessage.style.display = "block";
+            this.reset();
+            
+            // Scroll to success message
+            formMessage.scrollIntoView({ behavior: "smooth", block: "center" });
+          } else {
+            throw new Error("Submission failed");
+          }
+        } catch (error) {
+          formMessage.className = "form-message error";
+          formMessage.innerHTML =
+            '<i class="fas fa-exclamation-circle"></i> Oops! Something went wrong. Please try again or email your resume to support@darkiee.com';
+          formMessage.style.display = "block";
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnText;
+
+          // Hide message after 10 seconds
+          setTimeout(() => {
+            formMessage.style.display = "none";
+          }, 10000);
+        }
+      });
+
+      // Phone number validation
+      const phoneInput = document.getElementById("phone");
+      phoneInput.addEventListener("input", function (e) {
+        this.value = this.value.replace(/[^0-9]/g, "");
+      });
+
+      // Smooth scroll to form
+      document.addEventListener("DOMContentLoaded", function () {
+        // Check if URL has #apply anchor
+        if (window.location.hash === "#apply") {
+          setTimeout(() => {
+            document.getElementById("apply").scrollIntoView({ behavior: "smooth" });
+          }, 100);
+        }
+      });
+    </script>
+  </body>
+</html>

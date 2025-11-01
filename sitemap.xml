@@ -4,13 +4,13 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- Sitemap for Darkiee - Single Page Website -->
-<!-- Updated: October 2025 -->
+<!-- Sitemap for Darkiee Website -->
+<!-- Updated: November 2025 -->
 
 <!-- Homepage / Main Page -->
 <url>
   <loc>https://www.darkiee.com/</loc>
-  <lastmod>2025-10-25</lastmod>
+  <lastmod>2025-11-01</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.00</priority>
   <image:image>
@@ -22,59 +22,41 @@
 <!-- Alternative URL (index.html) -->
 <url>
   <loc>https://www.darkiee.com/index.html</loc>
-  <lastmod>2025-10-25</lastmod>
+  <lastmod>2025-11-01</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.95</priority>
+</url>
+
+<!-- Careers Page -->
+<url>
+  <loc>https://www.darkiee.com/careers.html</loc>
+  <lastmod>2025-11-01</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+
+<!-- Privacy Policy -->
+<url>
+  <loc>https://www.darkiee.com/privacy-policy.html</loc>
+  <lastmod>2025-10-26</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.50</priority>
+</url>
+
+<!-- Terms of Service -->
+<url>
+  <loc>https://www.darkiee.com/terms-of-service.html</loc>
+  <lastmod>2025-10-26</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.50</priority>
 </url>
 
 <!-- Sitemap -->
 <url>
   <loc>https://www.darkiee.com/sitemap.xml</loc>
-  <lastmod>2025-10-25</lastmod>
+  <lastmod>2025-11-01</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.30</priority>
 </url>
-
-</urlset>
-  <loc>https://www.darkiee.com/contact.html</loc>
-  <lastmod>2024-03-31T15:06:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.darkiee.com/quote.html</loc>
-  <lastmod>2024-03-31T15:06:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.darkiee.com/blog.html</loc>
-  <lastmod>2024-03-31T15:06:55+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.darkiee.com/detail.html</loc>
-  <lastmod>2024-03-31T15:06:55+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.darkiee.com/price.html</loc>
-  <lastmod>2024-03-31T15:06:55+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.darkiee.com/feature.html</loc>
-  <lastmod>2024-03-31T15:06:55+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.darkiee.com/team.html</loc>
-  <lastmod>2024-03-31T15:06:55+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.darkiee.com/testimonial.html</loc>
-  <lastmod>2024-03-31T15:06:55+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-
 
 </urlset>
