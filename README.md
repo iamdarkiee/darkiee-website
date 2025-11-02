@@ -4,7 +4,7 @@
 
 A complete, modern, professional single-page website for Darkiee - a technology company specializing in web development, mobile apps, AI automation, cloud solutions, and digital branding.
 
-![Darkiee Website](img/logo-new.png)
+![Darkiee Website](img/darkiee-logo.png)
 
 ## 🌟 Overview
 
