@@ -2172,3 +2172,587 @@ a:hover {
     gap: 1rem;
   }
 }
+
+/* ================================
+   CAREERS PAGE STYLES
+   ================================ */
+
+/* Careers Hero Section */
+.careers-hero {
+  padding: 180px 20px 100px;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    var(--color-bg-primary) 0%,
+    var(--color-bg-secondary) 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.careers-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(247, 127, 3, 0.1) 0%,
+    transparent 50%
+  );
+}
+
+.careers-hero h1 {
+  font-size: 56px;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.careers-hero p {
+  font-size: 20px;
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin: 0 auto 40px;
+  position: relative;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 50px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 36px;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-item p {
+  color: var(--color-text-tertiary);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Culture Section */
+.culture-section {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.culture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.culture-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 40px 30px;
+  text-align: center;
+  transition: all var(--transition-base);
+  backdrop-filter: blur(10px);
+}
+
+.culture-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-primary);
+  box-shadow: 0 20px 40px rgba(247, 127, 3, 0.2);
+}
+
+.culture-card i {
+  font-size: 48px;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.culture-card h3 {
+  font-size: 22px;
+  color: var(--color-text-primary);
+  margin-bottom: 15px;
+}
+
+.culture-card p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* Positions Section */
+.positions-section {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.opportunities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.opportunity-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 40px 30px;
+  text-align: center;
+  transition: all var(--transition-base);
+  backdrop-filter: blur(10px);
+}
+
+.opportunity-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-primary);
+  box-shadow: 0 20px 40px rgba(247, 127, 3, 0.2);
+}
+
+.opportunity-card i {
+  font-size: 48px;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.opportunity-card h3 {
+  font-size: 22px;
+  color: var(--color-text-primary);
+  margin-bottom: 15px;
+}
+
+.opportunity-card p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Application Form Section */
+.application-section {
+  padding: 100px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-container {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 50px;
+  margin-top: 40px;
+  backdrop-filter: blur(10px);
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 15px 20px;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  font-size: 15px;
+  transition: all var(--transition-fast);
+  font-family: var(--font-secondary);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(247, 127, 3, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+.form-group select option {
+  background: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+}
+
+/* Form Help Text */
+.form-help-text {
+  color: var(--color-text-tertiary);
+  font-size: 13px;
+  display: block;
+  margin-top: 8px;
+}
+
+.form-help-text i {
+  margin-right: 4px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 18px;
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-full);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  margin-top: 10px;
+  font-family: var(--font-primary);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(247, 127, 3, 0.4);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-message {
+  display: none;
+  padding: 15px 20px;
+  border-radius: var(--radius-md);
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.form-message.success {
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: var(--color-success);
+}
+
+.form-message.error {
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: var(--color-error);
+}
+
+/* Responsive Design for Careers Page */
+@media (max-width: 768px) {
+  .careers-hero {
+    padding: 140px 20px 80px;
+  }
+
+  .careers-hero h1 {
+    font-size: 36px;
+  }
+
+  .careers-hero p {
+    font-size: 16px;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .form-container {
+    padding: 30px 20px;
+  }
+
+  .opportunities-grid,
+  .culture-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .culture-section,
+  .positions-section,
+  .application-section {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .careers-hero h1 {
+    font-size: 28px;
+  }
+
+  .stat-item h3 {
+    font-size: 28px;
+  }
+
+  .form-container {
+    padding: 20px 15px;
+  }
+
+  .culture-card,
+  .opportunity-card {
+    padding: 30px 20px;
+  }
+}
+
+/* ================================
+   LEGAL PAGES STYLES (Privacy Policy & Terms of Service)
+   ================================ */
+
+/* Policy Container */
+.policy-container,
+.terms-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 120px 20px 80px;
+}
+
+/* Page Headers */
+.policy-header,
+.terms-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.policy-header h1,
+.terms-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+.policy-header .last-updated,
+.terms-header .last-updated {
+  color: var(--color-text-tertiary);
+  font-size: 16px;
+}
+
+/* Content Sections */
+.policy-section,
+.terms-section {
+  margin-bottom: 50px;
+}
+
+.policy-section h2,
+.terms-section h2 {
+  font-size: 28px;
+  font-weight: 600;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.policy-section h3,
+.terms-section h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 30px 0 15px;
+}
+
+.policy-section p,
+.terms-section p {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.policy-section ul,
+.terms-section ul {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+.policy-section ul li,
+.terms-section ul li {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.policy-section strong,
+.terms-section strong {
+  color: var(--color-text-primary);
+}
+
+/* Highlight Box (Terms of Service) */
+.highlight-box {
+  background: rgba(247, 127, 3, 0.1);
+  border-left: 4px solid var(--color-primary-light);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: var(--radius-sm);
+}
+
+.highlight-box strong {
+  color: var(--color-primary-light);
+}
+
+/* Contact Info Box */
+.contact-info {
+  background: var(--gradient-secondary);
+  color: white;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  margin-top: 60px;
+  box-shadow: var(--shadow-xl);
+}
+
+.contact-info h3 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.contact-info p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 15px;
+}
+
+.contact-info .contact-note {
+  margin-top: 20px;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: underline;
+  transition: color var(--transition-fast);
+}
+
+.contact-info a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Back to Home Button */
+.back-home {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.back-home a {
+  display: inline-block;
+  padding: 15px 40px;
+  background: var(--gradient-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  transition: all var(--transition-base);
+  box-shadow: 0 10px 20px rgba(247, 127, 3, 0.3);
+}
+
+.back-home a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 30px rgba(247, 127, 3, 0.4);
+  color: white;
+}
+
+.back-home a i {
+  margin-right: 8px;
+}
+
+/* Responsive Design for Legal Pages */
+@media (max-width: 768px) {
+  .policy-container,
+  .terms-container {
+    padding: 100px 20px 60px;
+  }
+
+  .policy-header h1,
+  .terms-header h1 {
+    font-size: 36px;
+  }
+
+  .policy-section h2,
+  .terms-section h2 {
+    font-size: 24px;
+  }
+
+  .policy-section h3,
+  .terms-section h3 {
+    font-size: 20px;
+  }
+
+  .contact-info {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .policy-header h1,
+  .terms-header h1 {
+    font-size: 28px;
+  }
+
+  .policy-section h2,
+  .terms-section h2 {
+    font-size: 20px;
+  }
+
+  .policy-section h3,
+  .terms-section h3 {
+    font-size: 18px;
+  }
+
+  .policy-section p,
+  .terms-section p,
+  .policy-section ul li,
+  .terms-section ul li {
+    font-size: 14px;
+  }
+
+  .contact-info {
+    padding: 20px 15px;
+  }
+
+  .back-home a {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
